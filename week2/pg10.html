@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        textarea {
+            width: 80%;
+            height: 200px;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Analysis</h1>
+    <textarea id="textInput" placeholder="Enter multi-line text here..."></textarea><br>
+    <button onclick="analyzeText()">Submit</button>
+
+    <div class="result" id="resultBox"></div>
+
+    <script>
+        function analyzeText() {
+            const text = document.getElementById('textInput').value;
+            const numCharacters = text.length;
+            const numWords = text.trim().split(/\s+/).length;
+            const numLines = text.split('\n').length;
+            const resultBox = document.getElementById('resultBox');
+            resultBox.innerHTML = `
+                <p>Characters: ${numCharacters}</p>
+                <p>Words: ${numWords}</p>
+                <p>Lines: ${numLines}</p>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let employees = [];
+    for (let i = 0; i < 3; i++) {
+      let name = prompt(`Enter name of employee ${i + 1}:`);
+      let age = prompt(`Enter age of employee ${i + 1}:`);
+      let department = prompt(`Enter department of employee ${i + 1}:`);
+      employees.push({ name, age, department });
+    }
+
+    let searchName = prompt("Enter the first name of the employee to search:");
+    let employee = employees.find(emp => emp.name === searchName);
+
+    if (employee) {
+      document.write(`Employee Info: Name: ${employee.name}, Age: ${employee.age}, Department: ${employee.department}`);
+    } else {
+      alert("Employee not found.");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt("enter the name please: ");
+        let ascii = name.charCodeAt(0);
+        if (ascii < 65 || ascii > 90) {
+            prompt("Plz enter the name properly. First letter should be capital");
+        }
+        else {
+            alert(`welcome ${name}`);
+        }
+    </script>
+</body>
+</html>
