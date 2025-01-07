@@ -42,14 +42,14 @@ function appendFile() {
 }
 appendFile();
 
-// function deleteFile() {
-//     fs.unlink(filePath, (err) => {
-//         if(err){
-//             console.log(err);
-//         }
-//         else {
-//             console.log("file deleted successfully");
-//         }
-//     })
-// }
-// deleteFile();
+function deleteFile() {
+    fs.unlink(filePath, (err) => {
+        if(err){
+            console.log(err);
+        }
+        else {
+            console.log("file deleted successfully");
+        }
+    })
+}
+deleteFile();
