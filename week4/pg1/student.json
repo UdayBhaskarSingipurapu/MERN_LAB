@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "age": 22,
+    "course": "Mechanical Engineering"
+  },
+  {
+    "id": 3,
+    "name": "Alice Brown",
+    "age": 21,
+    "course": "Electrical Engineering"
+  },
+  {
+    "id": 1,
+    "name": "Noob Gamer",
+    "age": 21,
+    "course": "Game Engineering"
+  }
+]
